@@ -1,0 +1,74 @@
+:root{--prim:#11304E;}
+		a{color: inherit;text-decoration: none;}
+		.df{display: flex;}.jcc{justify-content: center;}.aic{align-items: center;}
+		.jcsb{justify-content: space-between;}.tac{text-align: center;}
+		.navbar-brand{max-width: 200px;}img{width: 100%;height: auto;}
+	
+}
+.hero-session{text-align: center;margin-top: 7rem;margin-bottom: 10rem;color: #ffffff;font-size: 20px;}
+
+.hero-session h1,p{max-width: 940px;margin-left: auto;margin-right: auto;margin-bottom: 20px;font-weight: 600;}
+.btn-action{background-color: #FFC059;font-weight: 600;padding:13px 20px;}
+.nav-link{color: #ffffff;margin-right: 20px;font-weight:600;}
+.site {text-align: center;}
+.site h1,.title{color: var(--prim);}
+.btn-primary{background-color: var(--prim);}
+.move .card{border-radius: 20px;border: none;height: 100%;overflow:hidden;} 
+.move .splide__slide{padding:20px 10px}
+.move .card-text{padding-left:10px;}
+.move .card-text h4{font-size: 20px;color: var(--prim);margin-bottom: 20px;}
+.move .card-text i{color:#FFC059;margin-right:8px; }
+.org {color: var(--prim);text-align: center;font-size: 15px;padding: 20px;padding-top: 20;padding-bottom: 20px;}
+.org strong{text-align: center;margin-bottom: 20px;padding: 20px;display: inline-block;}
+.tag li{list-style: none;}
+.tag .boa1{color: #034f84;font-size: 20px;margin: 0px 4px;padding: 12px 28px;border-radius: 10px;}
+.tag .btn6{border: none;color: #69799d;font-size: 20px;margin: 0px 4px;padding: 12px 28px;}
+.tag .btn7{border: none;color: #69799d;font-size: 20px;margin: 0px 4px;padding: 12px 28px;}
+
+.card-body1 h3{ font-weight: 700;line-height: 1.375;padding-bottom: 1.5rem;letter-spacing: -1px;opacity: .96;color: #11304E;}
+.card-body1 p a{color: #034F84;font-weight: 700;}
+.card-body1 p{color: #7c8393;}
+.mcard{max-width: 940px;margin: auto;background: #fff;padding: 30px;}
+.pd{padding-top: 50px;padding-bottom: 50px;}
+.bg2{background-color: #f6f9fe;}
+.btn{border-radius: 10px;color: var(--prim);font-weight: 600;}
+.btn1{border-radius: 10px;padding: 10px;}
+.get_involved .img{max-width: 50px;margin: auto;}
+.get_involved h1{color: #EBECEF;}
+.get_involved .coun-card{text-align: center;background-color:#163756;overflow: hidden;padding: 2em 1em;height: 100%;}
+.get_involved{background-color: var(--prim);}
+.coun-card h3{color: #EBECEF;font-size:16px;padding: 16px 24px;}
+.coun-card p{color: #B5B6Bc;font-size:16px;margin-bottom: 32px;}
+.get_involved button{color: #fff; background-color: #034F84; padding: 13px 25px;line-height: 1;border-radius: .5rem;font-weight: 700;margin: auto;margin-left: 43%;}
+.article p{padding: 20px;margin-bottom: 30px;}
+.article .h2{color: var(--prim);margin-bottom: 20px;}
+.article img{border-radius: 10px;}
+
+.btn-dm{background: rgba(26,150,246,.08);border-radius: 17px;color: #1A96F6;
+margin-left:auto;display: block;}
+.partners p{color:gray;}
+footer{background-image: url(img/bg-footer.jpg);
+	background-position: 50%;background-repeat: no-repeat;background-size: cover;
+	padding-top: 5rem;padding-bottom: 5rem;}
+.social-links a,.fbrand{color:#fff;}.fbrand{font-size: 2em;}
+.social-links a{width: 30px;height: 30px;border-radius:50%;background-color: rgba(0,0,0,0.3);
+text-align: center;line-height: 30px;}
+.nav-item{position: relative;}
+.drop_box{color:none;padding: 20px;background-color: #fff;position: absolute;list-style: none;border-radius: 10px;display: none;}
+.drop_box li{padding: 10px;box-shadow: box-shadow: 0 0 10px #aaa;}
+.nav-item:hover .drop_box{display: block;}
+
+
+/*about page*/
+.btn-action{background-color: #FFC059;}
+.navbar-brand{max-width: 200px;}img{width: 100%;height: auto;color: var(--prim);}
+.nav-link{color: #11244e;margin-right: 20px;font-weight:600;}
+.nav-link:hover{color:#FFC059}
+.about_inst h1{color:#11304E;padding: 24px;font-size: 64px;}
+.about_america h2{color:#11304E;padding: 24px;font-size: 36px;}
+.gellery{background-image: url(img/bg30.png);}
+ .about_end{background-image: url(img/back3.png);height: 70vh;    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;}
+    .btn5{font-weight: 600;}

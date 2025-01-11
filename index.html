@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Community Center</title>
+	<link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/splide.min.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		:root{--prim:#11304E;}
+		a{color: inherit;text-decoration: none;}
+		.df{display: flex;}.jcc{justify-content: center;}.aic{align-items: center;}
+		.jcsb{justify-content: space-between;}.tac{text-align: center;}
+		.navbar-brand{max-width: 200px;}img{width: 100%;height: auto;}
+    .navbar{position: fixed;width: 100%;z-index: 8888;}
+	
+.hero-session{text-align: center;margin-top: 7rem;margin-bottom: 10rem;color: #ffffff;font-size: 20px;}
+
+.hero-session h1,p{max-width: 940px;margin-left: auto;margin-right: auto;margin-bottom: 20px;font-weight: 600;}
+.btn-action{background-color: #FFC059;font-weight: 600;padding: 13px 20px;}
+.nav-link{color: #ffffff;margin-right: 20px;font-weight:600;}
+.site {text-align: center;}
+.site h1,.title{color: var(--prim);}
+.btn-primary{background-color: var(--prim);}
+.move .card{border-radius: 20px;border: none;height: 100%;overflow:hidden;} 
+.move .splide__slide{padding:20px 10px}
+.move .card-text{padding-left:10px;}
+.move .card-text h4{font-size: 20px;color: var(--prim);margin-bottom: 20px;}
+.move .card-text i{color:#FFC059;margin-right:8px; }
+.org {color: var(--prim);text-align: center;font-size: 15px;padding: 20px;padding-top: 20;padding-bottom: 20px;}
+.org strong{text-align: center;margin-bottom: 20px;padding: 20px;display: inline-block;}
+.tag li{list-style: none;}
+.tag .boa1{color: #034f84;font-size: 20px;margin: 0px 4px;padding: 12px 28px;border-radius: 10px;}
+.tag .btn6{border: none;color: #69799d;font-size: 20px;margin: 0px 4px;padding: 12px 28px;}
+.tag .btn7{border: none;color: #69799d;font-size: 20px;margin: 0px 4px;padding: 12px 28px;}
+
+.card-body1 h3{ font-weight: 700;line-height: 1.375;padding-bottom: 1.5rem;letter-spacing: -1px;opacity: .96;color: #11304E;}
+.card-body1 p a{color: #034F84;font-weight: 700;}
+.card-body1 p{color: #7c8393;}
+.mcard{max-width: 1100px;background: #fff;padding: 30px;height:70vh;width: 1000%;}
+.pd{padding-top: 50px;padding-bottom: 50px;}
+.bg2{background-color: #f6f9fe;}
+.btn{border-radius: 10px;color: var(--prim);font-weight: 600;}
+.btn1{border-radius: 10px;padding: 10px;}
+.get_involved .img{max-width: 50px;margin: auto;}
+.get_involved h1{color: #EBECEF;}
+.get_involved .coun-card{text-align: center;background-color:#163756;overflow: hidden;padding: 2em 1em;height: 100%;}
+.get_involved{background-color: var(--prim);}
+.coun-card h3{color: #EBECEF;font-size:16px;padding: 16px 24px;}
+.coun-card p{color: #B5B6Bc;font-size:16px;margin-bottom: 32px;}
+.get_involved button{color: #fff; background-color: #034F84; padding: 13px 25px;line-height: 1;border-radius: .5rem;font-weight: 700;margin: auto;margin-left: 43%;}
+.article p{padding: 20px;margin-bottom: 30px;}
+.article .h2{color: var(--prim);margin-bottom: 20px;}
+.article img{border-radius: 10px;}
+
+.btn-dm{background: rgba(26,150,246,.08);border-radius: 17px;color: #1A96F6;
+margin-left:auto;display: block;}
+.partners p{color:gray;}
+footer{background-image: url(img/bg-footer.jpg);
+	background-position: 50%;background-repeat: no-repeat;background-size: cover;
+	padding-top: 5rem;padding-bottom: 5rem;}
+.social-links a,.fbrand{color:#fff;}.fbrand{font-size: 2em;}
+.social-links a{width: 30px;height: 30px;border-radius:50%;background-color: rgba(0,0,0,0.3);
+text-align: center;line-height: 30px;}
+.site-footer{background-color: var(--prim);}
+.nav-item{position: relative;}
+.drop_box{color:none;padding: 20px;background-color: #fff;position: absolute;list-style: none;border-radius: 10px;display: none;}
+.drop_box li{padding: 10px;box-shadow: box-shadow: 0 0 10px #aaa;}
+.nav-item:hover .drop_box{display: block;}
+.btn9{background: rgba(3,79,132,.08);color: #034F84;font-size:16px;font-weight:600;padding: 13px 60px;border-radius: 10px;}
+.v_btn{padding-top: 30px;text-align: center;}
+.splide__track ul li{padding: 20px;}
+.org h2{max-width: 1100px;margin: auto;margin-bottom: 20px;}
+.about_end{background-color:#f6f9fe; }
+.carousel{position: relative;}
+.hero-container .hero-session{position: absolute;z-index: 8888;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+
+
+</style>
+</head>
+
+<body>
+
+<section class="hero-container">
+   
+  <nav class="navbar navbar-expand-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png"   > 
+    </a>
+    <ul class="navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="index.html">Home</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+       </li>
+ 
+      <li class="nav-item">
+      <a class="nav-link" href="events.html">Events</a>
+    </li>
+     <li class="nav-item">
+       <a class="nav-link" href="gallery.html">Gallery</a>
+     </li>
+    <li class="nav-item">
+    
+      <a class="nav-link " href="#">Nagarathar Information</a>
+      <ul class="drop_box">
+        <li><a href="#">Nagarathar Viduthi</a></li>
+        <li><a href="#">Nagarathar Villages</a></li>
+        <li><a href="#">Nagarathar Pulligal</a></li>
+        <li><a href="#">Nagarathar Sadangukal</a></li>
+        <li><a href="#">Nagarathar Muraigal</a></li>
+        <li><a href="#">Chettinad Samayal</a></li>
+        <li><a href="#">Thanjavur District Information</a></li>
+      </ul>
+      
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+
+       <button class="btn btn-action">Join Us</button>
+   </ul>
+  </div>
+	</nav>
+     <div class="hero-session">
+  <h1>Thanjavur Nagarathar Magalir Sangam.</h1>
+  <p>Together, we can achieve excellence in community associations.</p>
+  <button class="btn btn-action">Join Us</button>
+  </div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/back.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/back.jpg" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/back.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+      <div class="carousel-item">
+      <img src="img/back.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+<section class="events pd">
+	<div class="container">
+	<div class="df jcsb aic py-3 site">
+		<h1>Upcoming Events</h1>
+		<a href="event.html"><button class="btn1 btn-primary">View All Events</button></a>
+	</div>	
+	  <div class="splide move">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+            	<div class="card shadow">
+            		<img class="card-img-top" src="img/ue2.jpg">
+            		<div class="card-body">
+            			<div class="card-text">
+                  	 <span class="v-fz">Fri, Jun 17</span><br>
+                      <h4 class="h4">Event 1</h4>
+                      <i class="fa fa-clock"></i><span>12:00 PM to  1:00 PM</span><br>
+                      <i class="fa fa-comment"> </i><span>Virtual</span>
+                  
+                		</div>	
+            		</div>
+            	</div>
+            </li>
+   
+            <li class="splide__slide">
+            	<div class="card shadow">
+            		<img class="card-img-top" src="img/ue1.jpg">
+            		<div class="card-body">
+            			<div class="card-text">
+                  	
+                    <span class="v-fz">Fri, Jun 17</span><br>
+                      <h4 class="h4">Event 2</h4>
+                      <i class="fa fa-clock"></i><span>12:00 PM to  1:00 PM</span><br>
+                      <i class="fa fa-comment"> </i><span>Virtual</span>
+                  	
+                		</div>	
+            		</div>
+            	</div>
+            </li>
+           
+
+            <li class="splide__slide">
+            	<div class="card shadow">
+            		<img class="card-img-top" src="img/ue3.jpg">
+            		<div class="card-body">
+            			<div class="card-text">
+                  	
+                      <span class="v-fz">Fri, Jun 17</span><br>
+                      <h4 class="h4">Event 3</h4>
+                      <i class="fa fa-clock"></i><span>12:00 PM to  1:00 PM</span><br>
+                      <i class="fa fa-comment"> </i><span>Virtual</span>
+          
+                		</div>	
+            		</div>
+            	</div>
+            </li>
+
+        <li class="splide__slide">
+            	<div class="card shadow">
+            		<img class="card-img-top" src="img/ue4.jpg">
+            		<div class="card-body">
+            			<div class="card-text">
+                  		<span class="v-fz">Thu, Jun 09</span><br>
+                  		<h4 class="h4">Event 4</h4>
+                  		<i class="fa fa-clock"></i><span>4:00 PM  to  7:00 PM</span><br>
+                  		<i class="fa fa-comment"> </i><span>Schaumburg</span>
+                		</div>	
+            		</div>
+            	</div>
+            </li>
+   
+                <li class="splide__slide">
+            	<div class="card shadow">
+            		<img class="card-img-top" src="img/ue5.jpg">
+            		<div class="card-body">
+            			<div class="card-text">
+                  		<span class="v-fz">Fri, Jun 17</span><br>
+                  		<h4 class="h4">Event 5</h4>
+                  		<i class="fa fa-clock"></i><span>12:00 PM to  1:00 PM</span><br>
+                  		<i class="fa fa-comment"> </i><span>Virtual</span>
+                		</div>	
+            		</div>
+            	</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</section>
+<section class="primeir bg2 pd">
+	<div class="container-fluid">
+		<div class="org">
+			<strong>The primeir organization</strong>
+			<h2>CAI-IL is the premier organization inspiring
+              community association excellence through
+            best business practices</h2>
+          
+              <nav class="nav jcc mb-3">
+                <button class="btn btn-outline-primary"> Homeowners &amp; Board Members</button>
+                <button class="btn"> Community Association Managers</button>
+                <button class="btn">Business Partners</button>
+            </nav>
+		</div>
+
+       <div class="splide mov2">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+                 <div class="row mcard aic">
+                  <div class=" card-body col-3">
+                   <img src="img/card.png">
+                 </div>
+             <div class=" card-body1 col-9">
+               <h3>Charted Prisident</h3>
+               <p>Board Members and Homeowners can increase property values by achieving excellence through education programs. CAI-Illinois is your resource for finding the right management company or business partner for your association while keeping you up-to-date with industry trends and latest legal updates.</p>
+                 <p><a href="#">Read More »</a></p>
+             </div> 
+             
+           
+            </li>
+              <li class="splide__slide">
+             
+                      <div class="row mcard aic">
+                  <div class=" card-body col-3">
+                   <img src="img/card.png">
+                 </div>
+             <div class=" card-body1 col-9">
+               <h3>Charted Secrety</h3>
+               <p>Board Members and Homeowners can increase property values by achieving excellence through education programs. CAI-Illinois is your resource for finding the right management company or business partner for your association while keeping you up-to-date with industry trends and latest legal updates.</p>
+                 <p><a href="#">Read More »</a></p>
+             </div> 
+                </div>
+             
+            </li>
+              <li class="splide__slide">
+             
+                      <div class="row mcard aic">
+                  <div class=" card-body col-3">
+                   <img src="img/card.png">
+                 </div>
+             <div class=" card-body1 col-9">
+               <h3>Charted Accountancy</h3>
+               <p>Board Members and Homeowners can increase property values by achieving excellence through education programs. CAI-Illinois is your resource for finding the right management company or business partner for your association while keeping you up-to-date with industry trends and latest legal updates.</p>
+                 <p><a href="#">Read More »</a></p>
+             </div> 
+             
+            </li>
+          </ul>
+
+   
+      </div>
+	</div>
+</section>
+
+<section class="get_involved pd">
+
+	<div class="container">
+			<h1 class="mb-5">Get Involved</h1>
+			<div class="row">
+				<div class="col-4">
+					<div class="coun-card">
+			    	<div class="img">
+			    	<img src="img/get1.png" >
+			   		 </div>
+                <h3>Meet, Network &amp; Establish</h3>
+                 <p>Meet, network, and establish a rapport with other industry members by joining one of our many committees &amp; help shape the future of the community association industry.</p>
+					</div>
+			</div>
+				
+				<div class="col-4">
+					<div class="coun-card">
+			    	<div class="img">
+			    	<img src="img/get2.png" >
+			   		 </div>
+               <h3>Establish Yourself &amp; Your Company</h3>
+                 <p>Establish yourself and your company as an industry leader by sharing your knowledge and expertise as a CAI author or speaker.</p>
+					</div>
+			</div>
+			<div class="col-4">
+					<div class="coun-card">
+			    	<div class="img">
+			    	<img src="img/get2.png" >
+			   		 </div>
+                    <h3>Increase Your Visibility</h3>
+                   <p>Increase your visibility in the marketplace by sponsoring an education program or networking event and get your name in front of those responsible for the decision making.</p>
+					</div>
+			</div>
+		</div>
+
+			<div class="pd">
+				<a href="#"><button class="btn1 btn-primary ">View All List</button></a>
+			</div>
+	</div>
+</section>
+<section class="article pd">
+	<div class="container">
+		<h3 class="h2">Latest Articles</h3>
+
+		 <div-row class="row">
+            <div class="col-md-6">
+            	<img src="img/event2.jpg">
+            </div>
+       
+            <div class="col-md-6">
+            	<div class="df aic">
+            		<img class="w-25" src="img/event1.jpg" width="400" height="250">
+            		<p class="w-75"> Watch/Listen Again: Answering Unknowns: Exhibiting at CAI IL’s Virtual Expo  </p>
+            	</div>
+            		<div class="df aic">
+            		<img class="w-25" src="img/event2.jpg" width="400" height="250">
+            		<p class="w-75"> Watch/Listen Again: Answering Unknowns: Exhibiting at CAI IL’s Virtual Expo  </p>
+            	</div>
+            		<div class="df aic">
+            		<img class="w-25" src="img/event3.jpg" width="400" height="250">
+            		<p class="w-75"> Watch/Listen Again: Answering Unknowns: Exhibiting at CAI IL’s Virtual Expo  </p>
+            	</div>
+            </div>         
+         </div-row>
+         <div class="v_btn">
+         <a href="gallery.html"><button class="btn btn9">View all Articals</a></button>
+		</div>
+	</div>
+	
+</section>
+
+<section  id="embed" class="embed-sec"></section>
+
+<section class="partners bg2 pd">
+	<div class="container">
+		<div class="df jcsb aic mb-5">
+			<h2 class="title">Get to Know Our Partners</h2>
+			<a href="#" class="btn btn-primary text-white">View All Partners</a>
+		</div>
+   
+      <div class="splide mov1">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Viduthi</h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+             <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Village</h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Pulligal </h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Sadangukal</h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Muraigal</h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+             <li class="splide__slide">
+              <div class="card shadow">
+                <img class="card-img-top">
+                <div class="card-body">
+                  <div class="card-text">
+                    <img src="img/gal1.jpg" style="margin-bottom: 20px;">
+                      <h3>Nagarathar Samayal</h3><br>
+                      <p> We were made to serve community associations. For more than two decades, we've been committed to helping associations reach their financial goals with an unmatched level of service.</p>
+                      
+                    </div>  
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+	
+
+       </b-row>
+     </div>
+	</div>
+</section>
+<section class="about_end pd">
+  <div class="hero-session">
+  <p>Community Association Institute.</p>
+  <h1>Become a member today!.</h1>
+  <a href="#"><button class="btn btn-action btn5">Join CAI</button></a>
+  </div>
+</section>
+<footer class="site-footer text-white">
+	<div class="container">
+		<div class="df aic jcsb">
+			<a href="#" class="fbrand">Brand Logo</a>
+			<nav class="social-links">
+				<a href="#" class="fab fa-facebook-f"></a>
+				<a href="#" class="fab fa-twitter"></a>
+				<a href="#" class="fab fa-instagram"></a>
+			</nav>
+		</div>
+	 	<hr class="lg:my-16 sm:my-12 my-11">
+		<f-menu class="row">
+			<f-col class="col-3 p-3">
+			
+				<p><a href="#">Events</a></p>
+				<p><a href="#">Gallery</a></p>
+				<p><a href="#">Nagarathar Information</a></p>
+          <p><a href="#">About</a></p>
+			</f-col>
+      <f-col class="col-3 p-3">
+				<p><strong><a href="#">Membership</a></strong></p>
+				<p><a href="#">Join Now</a></p>
+				<p><a href="#">Membership Benefits</a></p>
+				<p><a href="#">Printed Directory</a></p>
+				<p><a href="#">Membership Updates</a></p>
+			</f-col>
+			<f-col class="col-3 p-3">
+				<p><strong><a href="#">Contact</a></strong></p>
+				<p>1821 Walden Office Square,<br>Suite 100, Schaumburg IL 60173</p>
+				<p><a href="#">info@cai-illinois.org</a></p>
+				<p><a href="#">Phone: (847) 301-7505</a></p>
+			</f-col>
+		</f-menu>
+	</div>
+</footer>
+<script src="assets/splide.min.js"></script>
+<script src="assets/bootstrap.bundle.min.js"></script>
+<script>
+	  new Splide( '.move',{
+      // type   : 'loop',
+      perPage: 3,
+      pagination:false,
+      arrows:false,
+     
+      perMove:1,
+      breakpoints:{
+        640:{perPage:2},
+        300:{perPage:1},
+        900:{perPage:3}
+      }
+    } ).mount();
+        new Splide( '.mov1',{
+      // type   : 'loop',
+      perPage: 2,
+      pagination:false,
+     
+      perMove:1,
+      breakpoints:{
+        640:{perPage:2},
+        300:{perPage:1},
+        900:{perPage:3}
+      }
+    } ).mount();
+       new Splide( '.mov2',{
+      // type   : 'loop',
+      perPage: 1,
+      pagination:false,
+     
+      perMove:1,
+      breakpoints:{
+        640:{perPage:2},
+        300:{perPage:1},
+        900:{perPage:3}
+      }
+    } ).mount();
+function embed() {
+  let tw, fb, w = document.body.clientWidth,wh,fn,f1,e=document.createElement('script');;
+  wh = w < 600 ? w - 100 : 500 ;
+  fn = () => {
+    if (w > 1000) { return w - wh - 180;}
+    if (w < 1000 && w > 600) { return 500;}
+    if (w < 600) { return w - 100;}
+  }
+  tw = `<a id="tw_frame" class="twitter-timeline" data-height="460" href="https://twitter.com/IndiaExposure?ref_src=twsrc%5Etfw">Tweets by exposureindia</a>`;
+  f1 = encodeURIComponent('https://www.facebook.com/ExposureIndiaPvtLtd/');
+  fb = `https://www.facebook.com/plugins/page.php?href=${f1}&tabs=timeline&width=${wh}&height=430&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`;
+  document.getElementById('embed').innerHTML = `
+	<style>
+.embed-sec {position: relative;padding:3em 0;display: block;background-color:var(--prim);}
+.iframe_fb,.iframe_tw {background-color: #fff;border-radius: 7px;z-index: 2;
+height: 475px !important;position:relative;padding: 10px;}
+.iframe_fb iframe {width: 100%;height:475px;}.iframe_tw iframe {width: 100%;height:460px;}
+.iframe_fb,.iframe_tw {width: 90%;margin: 10px auto;}
+@media screen and (min-width: 1000px) {
+.embed-sec {display: flex;justify-content: space-evenly;}.iframe_fb,.iframe_tw {width: 90%;margin: 0 10px;}
+}
+</style>
+	<div class="middle embed-sec">
+  <div class="iframe_fb anime fleft" style='width:${wh}px;'>
+    <iframe id='fb_frame' src="${fb}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>  
+  <div class="iframe_tw anime fright" style='width:${fn()}px;'>${tw}</div>
+</div>`;
+  e.src = "https://platform.twitter.com/widgets.js"; //e.charset = "utf-8";
+  document.body.append(e);
+}
+setTimeout(() => {
+	embed()
+}, 2000);
+</script>
+</body>
+</html>
