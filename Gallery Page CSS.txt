@@ -1,0 +1,416 @@
+.gallery-card-body{
+    padding: 2.25rem !important;
+}
+/* Section 1 START*/
+.gallery-image-container {
+    position: relative; /* Position relative for the overlay */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center container */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Responsive Image */
+.gallery-responsive-image {
+    width: 100%; /* Full width */
+    height: 50vh !important;
+    background-position: center;
+}
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute; /* Positioning overlay */
+    top: 35%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    text-align: center; /* Center text */
+    color: white; /* White text color for contrast */
+    padding: 20px; /* Padding for the overlay */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Title Styles */
+.gallery-background-image-text {
+    font-size: 5.5rem; /* Large font size for the title */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Subtitle Styles */
+.gallery-overlay h4 {
+    font-size: 1.25rem; /* Smaller font size for the subtitle */
+    margin: 10px 0 0; /* Margin for spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery-background-image-text {
+        font-size: 2rem; /* Smaller title on smaller screens */
+    }
+
+    .gallery-overlay h4 {
+        font-size: 1rem; /* Smaller subtitle on smaller screens */
+    }
+}
+/*Section 1 END*/
+
+/* Section 2 START */
+.content-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%); /* Gradient background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Elevated shadow for depth */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 20px auto; /* Centering the container */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.content-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Header Styles */
+.gallery-head {
+    margin-bottom: 16px; /* Spacing below the header */
+}
+
+.gallery-head h5 {
+    font-size: x-large; /* Slightly smaller font size */
+    color: #007bff; /* Color for the subtitle */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+/* Paragraph Styles */
+.gallery-short-paragraph{
+    color: #555; /* Medium gray for text color */
+    line-height: 1.8; /* Improved line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+    padding: 0 10px; /* Horizontal padding for paragraphs */
+    border-left: 4px solid #007bff; /* Decorative left border */
+    background-color: #f9f9f9; /* Light background for paragraphs */
+    border-radius: 4px; /* Slight rounding */
+}
+.gallery-long-paragraph{
+    color: #555; /* Medium gray for text color */
+    line-height: 1.8; /* Improved line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+    padding: 0 10px; /* Horizontal padding for paragraphs */
+    
+}
+
+/* Responsive Text Adjustment */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem; /* Slightly smaller on small screens */
+    }
+    
+    .gallery-short-paragraph,
+    .gallery-long-paragraph {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
+.gallery-cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.gallery-cta-button:hover {
+    background-color: #0056b3;
+}
+/*Section 2 END*/
+
+/*Section 3 START*/
+/* Section Styling */
+.gallery-section-3 {
+    padding: 50px 20px; /* Add padding for top and bottom */
+    background-color: #f7f9fc; /* Light background for contrast */
+}
+
+/* Container and Row Styling */
+.gallery-container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Text Content Styling */
+.gallery-text-content {
+    display: flex;
+    flex-direction: column;
+    /* Center the text vertically */
+}
+
+.gallery-text-content h1 {
+    margin-top: -4px;
+    font-size: 4.5rem; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.gallery-text-content p {
+    font-size: 1.1rem; /* Slightly larger paragraph text */
+    color: #555; /* Medium grey color */
+    line-height: 1.6; /* Increase line height for readability */
+    font-size: large;
+}
+
+/* Image Styling */
+.gallery-image {
+    width: 100%; /* Make image responsive */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+/* Image Hover Effect */
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-text-content h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+    
+    .gallery-text-content p {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+}
+/*Section 3 END*/
+
+/*Section 7 START*/
+.sildercontent {
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Hover Effect */
+.sildercontent:hover {
+    transform: translateY(-12px); /* Lift animation */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+}
+
+/* Heading Styling */
+.sildercontent h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1e3799; /* Primary blue color */
+    margin-bottom: 18px;
+    text-transform: capitalize;
+}
+
+/* Paragraph Styling */
+.sildercontent p {
+    font-size: large;
+    line-height: 1.8;
+    color: #444; /* Darker text for readability */
+    margin-bottom: 14px;
+    word-wrap: break-word;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Highlight Key Text */
+.sildercontent p strong {
+    color: #FF5733; /* Eye-catching orange */
+    font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sildercontent {
+        padding: 20px 25px;
+        text-align: center;
+    }
+
+    .sildercontent h1 {
+        font-size: 2.2rem;
+    }
+
+    .sildercontent p {
+        font-size: 0.9rem;
+    }
+}
+
+.carousel-inner {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+    /* background: linear-gradient(to right, #7f8fa6, #273c75); Linear gradient background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Padding for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+.gallery-readMoreText{
+    font-size: 2rem;
+    margin: 15px 0px;
+    text-decoration: none;
+    color: #1e3799 !important;
+}
+
+/*section 7 END*/
+
+/*Section 5 START*/
+.gallery-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide the overflowing cards when not in view */
+}
+
+/* Position the navigation buttons on top of the carousel */
+.gallery-carousel-nav-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%); /* Vertically center the buttons */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons appear above cards */
+}
+
+/* Position the Previous button on the left */
+.gallery-prev-btn {
+    left: 10px;
+}
+
+/* Position the Next button on the right */
+.gallery-next-btn {
+    right: 10px;
+}
+
+/* Center the text inside the card */
+.gallery-centered-text {
+    margin-top: 14px;
+    color: white;
+    font-size: 1.5rem; /* Adjust the font size */
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+/* Style for the card images */
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsive padding and other styles as needed */
+.card-body {
+    padding: 20px;
+}
+
+/* Adjust the layout of cards based on screen size */
+@media (min-width: 1200px) {
+    .gallery-carousel-slide .gallery-card-item {
+        width: 33.33%; /* Show 3 cards per row */
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .gallery-carousel-slide .gallery-card-item {
+        width: 50%; /* Show 2 cards per row */
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-carousel-slide .gallery-card-item {
+        width: 100%; /* Show 1 card per row on small screens */
+    }
+}
+
+/*Section 5 END*/
+
+/*Section 6 START*/
+.gallery-section-head{
+    color: #1e3799;
+}
+.gallery-listfields {
+    margin: 10px;
+    margin-left: 10%;
+    padding: 0;
+    list-style: none;
+    background-color: #e0f7fa;
+    align-items: center; /* Vertically center the icon and text */
+    padding: 12px 20px;
+    margin: 10px;
+    margin-left: 10%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    cursor: pointer;
+}
+
+/* Style for each item (icon + text) */
+.gallery-listfields .gallery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Spacing between list items */
+    transition: all 0.3s ease;
+}
+
+/* Icon style */
+.gallery-listfields .gallery-item i {
+    font-size: 16px; /* Adjust icon size */
+    color: white; /* Green color for checkmark */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px; /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Text style */
+.gallery-listfields .gallery-item span {
+    font-size: 16px; /* Adjust text size */
+    color: #333; /* Default text color */
+    font-weight: 500; /* Slightly bold for emphasis */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for icon and text */
+.gallery-listfields .gallery-item:hover i {
+    color: #2196F3; /* Change icon color to blue on hover */
+}
+
+.gallery-listfields .gallery-item:hover span {
+    color: #2196F3; /* Change text color to blue on hover */
+}
+
+/* Add a subtle underline on hover */
+.gallery-listfields .gallery-item:hover span {
+    text-decoration: underline;
+}
+
+
+/*Section 6 END*/

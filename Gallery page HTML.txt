@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- keep slide section refrences link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Font Awesome CDN (for icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- Background Image Sections START-->
+    <section class="section-1-BackgroundImage" style="margin-bottom: 24px;">
+        <div class="col">
+            <div class="gallery-image-container">
+                <img src="./back.jpg" alt="Description of Image" class="gallery-responsive-image"><!-- Background Image (back)-->
+                <div class="gallery-overlay">
+                    <h1 class="gallery-background-image-text">Community Centre</h1>
+                    <h4>Together, we can achieve excellence in community association.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Background Image Sections END-->
+
+    <!-- Content Image Sections START-->
+    <section class="section-2-ContentImage" style="margin-bottom: 24px;">
+        <div class="container">
+            <div class="row">
+                <!-- Left Content Section -->
+                <div class="col-4">
+                        <div class="gallery-head">
+                            <h1 class="gallery-section-head" style="font-weight: 600;">What we are offer about our gulf club</h1>
+                        </div>
+                        <div class="card">
+                            <div class="card-body gallery-card-body">
+                                <p class="gallery-short-paragraph">
+                                    This is the short paragraph with up to four lines of text. Adjust the content to fit within the specified number of lines.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body gallery-card-body">
+                            <p class="gallery-long-paragraph">
+                                This is the longer paragraph with up to seven lines of text. It provides additional details and information. Ensure the content remains within the specified number of lines across all devices.
+                            </p>
+                            <button class="gallery-cta-button">Click Here</button>
+                        </div>
+                </div>
+                <!-- Right Image Section -->
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 1"><!-- card Image (gally 7)-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_4.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 2"><!-- card Image (gally 8)-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_3.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 3"><!-- card Image (event4)-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_2.png" class="w-100 shadow-1-strong rounded" alt="Image Description 4"><!-- card Image (event3)-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content Image Sections END-->
+
+     <!-- Swap the left layout content with the right layout image section. START.-->
+    <section class="section-3-SwapContentImage"style="margin-bottom: 24px;">
+        <section class="gallery-section-3">
+            <div class="gallery-container">
+                <div class="row">
+                    <div class="col-md-6 gallery-text-content">
+                        <h1 class="gallery-section-head">Basket Ball</h1>
+                        <p>
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./sectionThree_1.jpg" class="gallery-image"><!-- card Image (gally 8)-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section-3">
+            <div class="gallery-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./FootballUpdated.png" class="gallery-image"><!-- card Image (galley 3)-->
+                    </div>
+                    <div class="col-md-6 gallery-text-content">
+                        <h1 class="gallery-section-head">FootBall</h1>
+                        <p>
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section-3">
+            <div class="gallery-container">
+                <div class="row">
+                    <div class="col-md-6 gallery-text-content">
+                        <h1 class="section-head">Cricket</h1>
+                        <p>
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./sectionThree_1.jpg" class="gallery-image"><!-- card Image (gally 8)-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section-3">
+            <div class="gallery-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./Gulf.jpg" class="gallery-image">><!-- card Image (ue2)-->
+                    </div>
+                    <div class="col-md-6 gallery-text-content">
+                        <h1 class="gallery-section-head">Volley Ball</h1>
+                        <p>
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                            Whether you have questions about joining the Illinois Chapter of Community Associations Institute or you’re interested in sponsorship opportunities, complete the form below to get in touch with our team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Swap the left layout content with the right layout image section END.-->
+
+    <!-- carousel ClickOption section START.-->
+    <section class="section-5-carouselClickOption" style="margin-bottom: 24px;">
+        <div class="gallery-container my-4">
+            <!-- Carousel container -->
+            <div class="gallery-carousel-container">
+                <!-- Carousel slide (row of cards) -->
+                <div class="gallery-carousel-slide" id="carouselSlide">
+                    <!-- All the cards will be dynamically inserted here -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 1"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Info Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 2"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Dashboard Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 3"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Widget Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./SectionTwo_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 4"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Analytics Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./sectionThree_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 5"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Performance Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./sectionThree_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 6"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Progress Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./sectionThree_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 7"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Code Snippet Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./sectionThree_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 8"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Invitation Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 gallery-card-item">
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <img src="./sectionThree_1.jpg" class="w-100 shadow-1-strong rounded" alt="Image Description 8"><!-- card Image (gally 7)-->
+                                    <h4 class="gallery-centered-text">Countdown Card</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Navigation Buttons -->
+                <button class="gallery-carousel-nav-btn gallery-prev-btn" id="prevBtn" style="margin-left: 12px;">&#60;</button>
+                <button class="gallery-carousel-nav-btn gallery-next-btn" id="nextBtn" style="margin-right: 14px;">&#62;</button>
+            </div>
+        </div>
+    </section>
+    <!-- carousel ClickOption section END.-->
+    <!-- Content RoundImage Sections START.-->
+    <section class="section-6-ContentRoundImage" style="margin-bottom:24px">
+            <div class="gallery-container">
+                <div class="row">
+                    <!-- Left Content Section -->
+                    <div class="col-6">
+                            <div class="gallery-head">
+                                <h1 class="gallery-section-head" style="font-weight: 600; !important">Find the best course & filed here</h1>
+                            </div>
+                            <div class="card">
+                                <div class="card-body gallery-card-body">
+                                    <p class="gallery-short-paragraph">
+                                        This is the short paragraph with up to four lines of text. Adjust the content to fit within the specified number of lines.
+                                        <br>
+                                        This is the longer paragraph with up to seven lines of text. It provides additional details and information. Ensure the content remains within the specified number of lines across all devices.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-listfields">
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Set goals</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Cricket Analytics and Strategy</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Fitness for Cricketers</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Cricket Umpiring and Officiating</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Laws of cricket</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <i class="fas fa-check"></i><span>Analytics and Strategy</span>
+                                </div>
+                            </div>
+                            <button class="gallery-cta-button" style="margin-left: 16px;">Click Here</button>
+                    </div>
+                    <!-- Right Image Section -->
+                    <div class="col-6">
+                            <div class="col-lg-12">
+                                <div class="card" style="border: none !important;">
+                                    <div class="card-body gallery-card-body">
+                                        <img src="./RoundImage.png" class="w-100 shadow-1-strong rounded" alt="Image Description 1"><!-- card Image (round image)-->
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <!-- Content RoundImage Sections END.-->
+    <!-- Continous slide Sections START.-->
+   <section class="section-7-Continous slide" style="margin-bottom: 24px;">
+    <div class="col">
+        <div class="gallery-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <section class="section-4">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./SectionTwo_1.jpg" alt="Los Angeles" style="width:100%; height: 100%; border-radius: 15PX;"><!-- card Image (ue2)-->
+                                </div>
+                                <div class="col-md-8 text-content sildercontent">
+                                    <h1>MS Dhoni</h1>
+                                    <p class="dhoni-quote">
+                                        MS Dhoni is not just a cricketer but an emotion for his fans. His contributions to Indian cricket, both as a player and a leader, have left an indelible mark. Dhoni’s legacy will continue to inspire generations, making him a true legend of the sport.
+                                        <br>
+                                        MS Dhoni’s journey is a source of inspiration for millions. From being a ticket collector at Kharagpur Railway Station to becoming one of the most celebrated cricketers in the world, his story epitomizes the power of dreams and dedication.
+                                    </p>
+                                    <a class="gallery-readMoreText" href="#">Read more &gt;&gt;</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+            
+                  <div class="item">
+                    <section class="section-4">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./Gulf.jpg" alt="Los Angeles" style="width:100%; height: 100%; border-radius: 15PX;"><!-- card Image (gally 8)-->
+                                </div>
+                                <div class="col-md-8 text-content sildercontent">
+                                    <h1>Virat Kohli</h1>
+                                    <p class="dhoni-quote">
+                                        Kohli is known for his aggressive batting style, impeccable technique, and remarkable consistency across all formats of the game. He served as the captain of the Indian cricket team from 2017 to 2021, leading the team to numerous victories and setting several records along the way. Under his leadership, India achieved historic series wins in Australia and against other major cricketing nations
+                                    </p>
+                                    <a class="gallery-readMoreText" href="#">Read more &gt;&gt;</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    
+                  </div>
+                
+                  <div class="item">
+                    <section class="section-4">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./sectionThree_1.jpg" alt="Los Angeles" style="width:100%; height: 100%; border-radius: 15PX;"><!-- card Image (gally 7)-->
+                                </div>
+                                <div class="col-md-8 text-content sildercontent">
+                                    <h1>Ravichandran Ashwin</h1>
+                                    <p class="dhoni-quote">
+                                        Ravichandran Ashwin, born on September 17, 1986, in Chennai, India, is one of the premier spin bowlers in the history of cricket. He made his international debut in 2010 and quickly became a vital member of the Indian cricket team, particularly in Test matches.
+            
+                                        Ashwin is known for his exceptional bowling skills, including his variations and ability to outsmart batsmen
+                                    </p>
+                                    <a class="gallery-readMoreText" href="#">Read more &gt;&gt;</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                   
+                  </div>
+                </div>
+            
+                
+              </div>
+        </div>
+      </div>
+   </section>
+    <!-- Continous slide Sections END.-->
+
+   <!-- jquery for carousel slide when user click the next or previous btn -->
+   <script>
+    // Select the carousel container and the cards
+    const carouselSlide = document.getElementById('carouselSlide');
+    const cards = document.querySelectorAll('.gallery-card-item'); // All the card elements
+    const totalCards = cards.length;
+    let cardsPerSlide = 3; // Default to 3 cards per slide
+    let currentIndex = 0; // Starting index of the cards to display
+
+    // Function to update the visible cards
+    function updateCarousel() {
+        // Hide all cards initially
+        cards.forEach(card => card.style.display = 'none');
+
+        // Determine the cards that should be shown based on the current index
+        const visibleCards = Array.from(cards).slice(currentIndex, currentIndex + cardsPerSlide);
+
+        // Show the selected set of cards
+        visibleCards.forEach(card => card.style.display = 'block');
+    }
+
+    // Next button event listener
+    document.getElementById('nextBtn').addEventListener('click', function() {
+        if (currentIndex + cardsPerSlide < totalCards) {
+            currentIndex += cardsPerSlide; // Move to the next set of cards
+        } else {
+            currentIndex = 0; // Reset to the first set of cards
+        }
+        updateCarousel(); // Update the carousel display
+    });
+
+    // Previous button event listener
+    document.getElementById('prevBtn').addEventListener('click', function() {
+        if (currentIndex - cardsPerSlide >= 0) {
+            currentIndex -= cardsPerSlide; // Move to the previous set of cards
+        } else {
+            currentIndex = totalCards - cardsPerSlide; // Move to the last set of cards
+        }
+        updateCarousel(); // Update the carousel display
+    });
+
+    // Adjust the number of cards per slide based on the screen size
+    function adjustCarouselLayout() {
+        if (window.innerWidth >= 1200) {
+            cardsPerSlide = 3;
+        } else if (window.innerWidth >= 768) {
+            cardsPerSlide = 2;
+        } else {
+            cardsPerSlide = 1;
+        }
+        updateCarousel(); // Recalculate the cards to show based on the new layout
+    }
+
+    // Listen for window resize events to adjust the carousel layout dynamically
+    window.addEventListener('resize', adjustCarouselLayout);
+
+    // Initial load of the carousel with the first set of cards
+    adjustCarouselLayout();
+</script>
+</body>
+</html>
