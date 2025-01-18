@@ -1,0 +1,294 @@
+$(document).ready(function () {
+    const $contentContainer = $('.content-container');
+    const $navLinks = $('.nav-links a');
+    
+    
+    const contentData = {
+        home: `
+        <div class="home-content" style="padding: 20px; background-color: #f4f4f9; margin-bottom: 20px;">
+            <h1 style="font-size: 2rem; color: #333;">Welcome to the Dashboard</h1>
+            <p style="font-size: 1rem; color: #555;">
+                This is your main content area. The left navigation bar remains fixed, providing quick access to 
+                key sections. Resize the browser window to see how the layout adjusts across various screen sizes.
+            </p>
+            <div class="dashboard" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 1.5rem; color: #333; margin-bottom: 20px;">Dashboard Overview</h2>
+                <p style="font-size: 1rem; color: #555;">
+                    Welcome to your dashboard. Here you can see your latest activities, notifications, and stats.
+                </p>
+                <div class="stats" style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Total Users</h3>
+                        <p style="font-size: 1rem; color: #555;">1,234</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Sales</h3>
+                        <p style="font-size: 1rem; color: #555;">$12,345</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Active Sessions</h3>
+                        <p style="font-size: 1rem; color: #555;">87</p>
+                    </div>
+                </div>
+                <div class="recent-activities" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Recent Activities</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li>User "JohnDoe" signed up</li>
+                        <li>Product "Gizmo" added to inventory</li>
+                        <li>Order #45367 shipped</li>
+                        <li>User "JaneDoe" completed a purchase</li>
+                    </ul>
+                </div>
+                <div class="notifications" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Notifications</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li><strong style="color: #007bff;">New update available!</strong> Update your app to enjoy new features.</li>
+                        <li><strong style="color: #007bff;">Server maintenance:</strong> Scheduled downtime from 12:00 AM to 2:00 AM.</li>
+                        <li><strong style="color: #dc3545;">Security alert:</strong> Unusual login attempt detected.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-content" style="padding: 20px; background-color: #f4f4f9; margin-bottom: 20px;">
+            <h1 style="font-size: 2rem; color: #333;">Welcome to the Dashboard</h1>
+            <p style="font-size: 1rem; color: #555;">
+                This is your main content area. The left navigation bar remains fixed, providing quick access to 
+                key sections. Resize the browser window to see how the layout adjusts across various screen sizes.
+            </p>
+            <div class="dashboard" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 1.5rem; color: #333; margin-bottom: 20px;">Dashboard Overview</h2>
+                <p style="font-size: 1rem; color: #555;">
+                    Welcome to your dashboard. Here you can see your latest activities, notifications, and stats.
+                </p>
+                <div class="stats" style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Total Users</h3>
+                        <p style="font-size: 1rem; color: #555;">1,234</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Sales</h3>
+                        <p style="font-size: 1rem; color: #555;">$12,345</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Active Sessions</h3>
+                        <p style="font-size: 1rem; color: #555;">87</p>
+                    </div>
+                </div>
+                <div class="recent-activities" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Recent Activities</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li>User "JohnDoe" signed up</li>
+                        <li>Product "Gizmo" added to inventory</li>
+                        <li>Order #45367 shipped</li>
+                        <li>User "JaneDoe" completed a purchase</li>
+                    </ul>
+                </div>
+                <div class="notifications" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Notifications</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li><strong style="color: #007bff;">New update available!</strong> Update your app to enjoy new features.</li>
+                        <li><strong style="color: #007bff;">Server maintenance:</strong> Scheduled downtime from 12:00 AM to 2:00 AM.</li>
+                        <li><strong style="color: #dc3545;">Security alert:</strong> Unusual login attempt detected.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>`,  // Your existing content for "home" section
+        RegisterProfile: `
+            <div id="modal" class="modal show">
+                <div class="modal-content">
+                    <!-- Modal Title -->
+                    <h2>Register Profile</h2>
+
+                    <!-- Modal Body with Form -->
+                    <form id="modalForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>`,// Your existing content for "RegisterProfile" section
+        ManageProfile: `
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Job Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>Product Manager</td>
+                    </tr>
+                    <tr>
+                        <td>Emily</td>
+                        <td>Johnson</td>
+                        <td>emilyj@example.com</td>
+                        <td>UX Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Michael</td>
+                        <td>Brown</td>
+                        <td>michaelb@example.com</td>
+                        <td>Data Analyst</td>
+                    </tr>
+                </tbody>
+            </table>`, // Your existing content for "Manage Profile" section
+        Setting: `
+        <div class="settings-content">
+            <h1>Settings</h1>
+                <h1 style="font-size: 2rem; color: #333;">Welcome to the Dashboard</h1>
+            <p style="font-size: 1rem; color: #555;">
+                This is your main content area. The left navigation bar remains fixed, providing quick access to 
+                key sections. Resize the browser window to see how the layout adjusts across various screen sizes.
+            </p>
+            <div class="dashboard" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 1.5rem; color: #333; margin-bottom: 20px;">Dashboard Overview</h2>
+                <p style="font-size: 1rem; color: #555;">
+                    Welcome to your dashboard. Here you can see your latest activities, notifications, and stats.
+                </p>
+                <div class="stats" style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Total Users</h3>
+                        <p style="font-size: 1rem; color: #555;">1,234</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Sales</h3>
+                        <p style="font-size: 1rem; color: #555;">$12,345</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Active Sessions</h3>
+                        <p style="font-size: 1rem; color: #555;">87</p>
+                    </div>
+                </div>
+                <div class="recent-activities" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Recent Activities</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li>User "JohnDoe" signed up</li>
+                        <li>Product "Gizmo" added to inventory</li>
+                        <li>Order #45367 shipped</li>
+                        <li>User "JaneDoe" completed a purchase</li>
+                    </ul>
+                </div>
+                <div class="notifications" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Notifications</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li><strong style="color: #007bff;">New update available!</strong> Update your app to enjoy new features.</li>
+                        <li><strong style="color: #007bff;">Server maintenance:</strong> Scheduled downtime from 12:00 AM to 2:00 AM.</li>
+                        <li><strong style="color: #dc3545;">Security alert:</strong> Unusual login attempt detected.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>`,// Your existing content for "Setting" section
+        ChooseFile: `
+            <h1>Contact Us</h1>
+               <h1 style="font-size: 2rem; color: #333;">Welcome to the Dashboard</h1>
+            <p style="font-size: 1rem; color: #555;">
+                This is your main content area. The left navigation bar remains fixed, providing quick access to 
+                key sections. Resize the browser window to see how the layout adjusts across various screen sizes.
+            </p>
+            <div class="dashboard" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 1.5rem; color: #333; margin-bottom: 20px;">Dashboard Overview</h2>
+                <p style="font-size: 1rem; color: #555;">
+                    Welcome to your dashboard. Here you can see your latest activities, notifications, and stats.
+                </p>
+                <div class="stats" style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Total Users</h3>
+                        <p style="font-size: 1rem; color: #555;">1,234</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Sales</h3>
+                        <p style="font-size: 1rem; color: #555;">$12,345</p>
+                    </div>
+                    <div class="stat-card" style="flex: 1; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+                        <h3 style="font-size: 1.2rem; color: #333;">Active Sessions</h3>
+                        <p style="font-size: 1rem; color: #555;">87</p>
+                    </div>
+                </div>
+                <div class="recent-activities" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Recent Activities</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li>User "JohnDoe" signed up</li>
+                        <li>Product "Gizmo" added to inventory</li>
+                        <li>Order #45367 shipped</li>
+                        <li>User "JaneDoe" completed a purchase</li>
+                    </ul>
+                </div>
+                <div class="notifications" style="margin-top: 30px;">
+                    <h3 style="font-size: 1.2rem; color: #333;">Notifications</h3>
+                    <ul style="font-size: 1rem; color: #555; padding-left: 20px;">
+                        <li><strong style="color: #007bff;">New update available!</strong> Update your app to enjoy new features.</li>
+                        <li><strong style="color: #007bff;">Server maintenance:</strong> Scheduled downtime from 12:00 AM to 2:00 AM.</li>
+                        <li><strong style="color: #dc3545;">Security alert:</strong> Unusual login attempt detected.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        `// Your existing content for "ChooseFile" section
+    };
+
+    $navLinks.on('click', function (e) {
+        e.preventDefault();
+        const targetId = $(this).attr('data-content');
+        if (contentData[targetId]) {
+            $contentContainer.fadeOut(300, function () {
+                $contentContainer.html(contentData[targetId]).fadeIn(300);
+            });
+        }
+        if (targetId === 'RegisterProfile') $modal.show();
+    });
+});
+$(document).ready(function () {
+    const $modal = $('#modal');
+    const $closeModalBtn = $('#closeModalBtn');
+    const $modalForm = $('#modalForm');
+
+    // Close the modal when the close button is clicked
+    $closeModalBtn.on('click', function () {
+        $modal.hide();  // Hide the modal
+    });
+
+    // Handle form submission inside the modal
+    $modalForm.on('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        alert('Form Submitted!');
+        $modal.hide();  // Hide the modal after submission
+    });
+
+    // Close the modal if the user clicks outside of it
+    $(window).on('click', function (e) {
+        if ($(e.target).is($modal)) {
+            $modal.hide();
+        }
+    });
+});
