@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+  <title>Flying World Migration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/splide.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v4">
+<style >
+  .site-footer{background-color: var(--prim);}
+a{text-decoration: none;}
+.work_process h2 strong{color: #1f3377;font-size: 30px;}
+.process-card{padding:20px 40px;display: flex;}
+.process-card h4{margin-bottom: 20px;font-size: 18px; }
+.process-card p{font-size: 14px;line-height: 24px;}
+.work_process .col-4:nth-child(1),
+.work_process .col-4:nth-child(2){padding: 25px 0 50px;}
+.process-card .icon-wrapper{border-radius:50%;width:80px;height: 80px;background-color: #1f3377;padding:20px;}
+.process-card .icon-wrapper img{filter:invert(1);}
+.process-card .icon-content{flex:1;padding:0 15px;}
+.wpb_wrapper{background-color: #1f3377;color: #fff;padding:20px 30px;}
+.wpb_wrapper h6{text-align: center;font-size: 20px;}
+.wpb_wrapper ul{list-style: none;padding: 0;}
+.wpb_wrapper li{padding:20px;display: flex;justify-content: space-between;font-size: 16px;  }
+.wpb_wrapper li:nth-child(even){background-color: #fff;}
+.wpb_wrapper li:nth-child(even) strong{color:#000;padding-right:20px;}
+.wpb_wrapper li:nth-child(even) span{color:#4d4d4d;padding-left:20px;}
+.work_process .col-4:nth-child(1) .process-card{border-right:1px dashed #1f3377;}
+.work_process .col-4:nth-child(1) .process-card:nth-child(1),
+.work_process .col-4:nth-child(2) .process-card:nth-child(1){border-bottom: 1px dashed #1f3377;}
+.work_process{margin-bottom: 50px;}
+/* .work_process .icon-wrapper:hover{background-color: #fff;} */
+
+.carousel-caption {left:0;right: 0;top: 50%;transform:translateY(-50%);max-width: 900px;
+  padding-left:120px;text-align: left;}
+.home-slide{min-height:100vh;}
+.home-slide p{font-size: 17px;padding: 10px;}
+.home-slide h1{font-size: 50px;padding: 10px;}
+.home-slide .button-1{padding-top: 20px;padding-left: 0px;}
+.home-slide .button-1 .btn{width: 230px;height: 50px; border-radius: 25px;font-size: 16px;}
+.home-slide .carousel-item{overflow: hidden;}
+.home-slide .carousel-item img{height:100vh;object-fit:cover;object-position:center;
+animation: hscale 10s ease infinite alternate;}
+.home-slide .carousel-caption p{background-color: #ffffffd3;color: #1f3377;display: inline-block;}
+.home-slide .carousel-caption h1{background-color: #ffffffd5;color: #1f3377;display: inline-block;}
+.home-slide .carousel-item p,.home-slide .carousel-item h1{opacity:0;transition:all 500ms ease 200ms;}
+.home-slide .carousel-item.active p,.home-slide .carousel-item.active h1{opacity:1;}
+
+
+
+.choosing-area{padding-bottom: 50px;background-color: rgb(233, 232, 232);}
+.single-choosing-item {position: relative;display: block;margin-bottom: 40px;border: 1px solid #f2f2f2;transition: all 0.5s ease-in-out 0.2s;padding: 40px 30px 40px;background-color: #fff;}
+.single-choosing-item .text-holder .readmore{width: 200px;height: 50px; border-radius: 25px;font-size: 16px;background-color: #ddd;border: none;
+transition: all .4s ease;}
+.single-choosing-item h3{font-size: 18px;}
+.single-choosing-item .text-holder p{font-size: 16px;padding-top: 20px;padding-bottom: 10px;}
+.single-choosing-item .top{display: flex;align-items: center;justify-content: space-between; color: rgb(22, 21, 21);}
+.single-choosing-item .icon-holder{width: 50px;height: 50px;opacity: 0.3;}
+.single-choosing-item:hover{transform: translateY(-10px);border-color: #4674a8;}
+.single-choosing-item .readmore:hover{background-color:#1f3377;color:#fff;}
+
+.container-box{text-align: center;background-color: #eef2fb;;}
+.container-box .head-icon{height: 40px;width: 40px;}
+.container-box .head-text{padding-top: 20px;padding-bottom: 20px;font-size: 15px;}
+.container-box .container-card{margin: 10px 0 10px;position: relative;overflow: hidden;
+  text-align: center;border-radius: 6px;background-color: #fff;padding: 20px;transform: translateY(-40px);}
+.container-box .head-read{text-decoration: none;font-size: 14px;}
+.container-box .head-title{padding: 10px;}
+
+.testi .tcaption img{width: 75px;height: 75px;}
+.testi{background-image: linear-gradient(to left,rgba(14, 18, 68, 0.95),rgba(14, 18, 68, 0.95)),
+  url(http://st.ourhtmldemo.com/new/Brighton/images/parallax-background/testimonial-bg.jpg);
+  padding-top: 50px;padding-bottom: 50px;}
+  .testi h3 strong{color: #fff;font-size: 20px;}
+  .testi h3{color: #46c3e8;font-size: 16px;padding-left:10px;}
+  .testi .col-3{display: flex;align-items: center;border-right: 2px solid #3f4267;padding-right: 20px;}
+  .testi .quote img{height: 30px;width: 30px;}
+  .testi blockquote{color: #fff;font-size: 20px;padding-top:20px;}
+  .testi .col-9{padding:10px 30px;}
+  #tslider{padding-bottom: 50px;}
+  .plogos{padding-top: 50px;border-top: 1px solid #3f4267;}
+  .plogos img{opacity: .2;transition: all 500ms ease;}
+  .plogos img:hover{opacity: 1;}
+
+  
+  .about p{font-size: 16px;}
+  .about .row{padding-top: 20px;display: flex;justify-content: space-between;align-items: center;}
+  .about .about-btn .btn1{width: 190px;height: 50px; border-radius: 25px;font-size: 16px;background-color: transparent;border:2px solid #1f3377;color: #1f3377;transition: all .2s ease-in-out;}
+  .about .about-btn .btn2{width: 150px;height: 50px; border-radius: 25px;font-size: 16px;margin-left: 20px;background-color: transparent;border:2px solid #1f3377;color:#1f3377;transition: all .2s ease-in-out;}
+  .about .about-note{padding-top: 35px;}
+  .about .about-btn .btn1:hover{background-color: #1f3377;color: #fff;}
+  .about .about-btn .btn2:hover{background-color: #1f3377;color: #fff;}
+
+  .um-service .um-icon{background-color: #1f3377;border-radius: 50%;width: 95px;height: 95px;
+    display: flex;justify-content: center;align-items: center;padding: 1rem;border: 3px solid #fff;transition: all .3s ease;}
+  .um-service .um-icon img{display: inline-block;filter: invert(1);
+    padding-top:5px;padding-bottom: 5px;overflow: hidden;}
+  .um-service .row{padding-top: 20px;padding-bottom: 20px;}
+  .um-service .um-cont{padding-top: 10px;padding-bottom: 30px;display: flex;text-align: right;}
+  .um-service .um-cont1{padding-top: 10px;padding-bottom: 30px;display: flex;}
+  .um-service .um-cont1 .def{padding-left: 20px;}
+  .um-service .um-icon:hover{background-color: #1c0906;border: 3px solid #e0cc88;filter: invert(1);}
+  .um-service .def h4{font-size: 22px;}
+  .um-service .def p{font-size: 16px;}
+  .um-service .def{padding-right: 20px;flex: 1;}
+
+  .v-type{padding: 60px 0;position: relative;}
+  .v-type .v-bg{position: absolute;bottom: 0;left: 0;width: 100%;height: 50%;background-color: #a59faa;z-index: -9;}
+  .v-type .coun-img{width: 90px;height: 90px;}
+  .v-type .coun-body{background-color: #fff;;text-align: center;padding: 10px;position: relative;transition:all .5s ease;}
+  .v-type li{padding: 12px;position: relative;z-index: 10;padding-bottom: 40px;}
+  .v-type .coun-text p{padding-top: 18px;}
+  .v-type .coun-text{padding-bottom: 15px;}
+  .v-type .v-fz{font-size: 15px;}
+  .v-type .v-li{background-color: #ffffff;width: 100%;height:0;position: absolute;top:100%;left: 0;transition: height .3s linear;}
+  .v-type li:hover .v-li{height: 40px;}
+  .v-type .dina-arrowRight{opacity: 0;transition:all .5s ease;font-size: 20px;color: #af0000;}
+  .v-type li:hover .dina-arrowRight{opacity: 1;}
+  .v-type li:hover .coun-body{box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);}
+  .v-type .v-in{border-bottom: 1px solid rgb(175, 0, 0);position: absolute;bottom: 0;left: 0;width: 100%;
+    transform: scaleX(0);transition:all .5s ease;}
+  /* .v-type .v-up{border-bottom: 3px solid #000;} */
+  .v-type li:hover .v-in{transform:scaleX(1);border-bottom: 3px solid #af0000;}
+
+
+  .embed-sec {position: relative;padding:3em 0;display: block;background-color: #a59faa;}
+.iframe_fb,.iframe_tw {background-color: #fff;border-radius: 7px;z-index: 2;
+height: 475px !important;position:relative;padding: 10px;}
+.iframe_fb iframe {width: 100%;height:475px;}.iframe_tw iframe {width: 100%;height:460px;}
+.iframe_fb,.iframe_tw {width: 90%;margin: 10px auto;}
+@media screen and (min-width: 1000px) {
+.embed-sec {display: flex;justify-content: space-evenly;}.iframe_fb,.iframe_tw {width: 90%;margin: 0 10px;}
+}
+  .v-type{
+    background-image:url("countryimag/free3.jpg");padding: 0;
+  }
+  .vtypevg{background-color:rgba(255,255,255,0.85);padding: 60px 0;}
+  .btn3{margin-top: 20%;}
+  .btn4{margin-top: 20%;}
+  .footer-style {
+    width: 100%;
+    height: 100%;
+    /* Adjust the height as needed */
+    position: relative;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            /* This is the gradient (black with some opacity) */
+            rgba(0, 0, 0, 0.5)
+            /* Another color stop (same here, but you can change it) */
+        ),
+        url('./countryimag/col1.jpg');
+    background-size: cover;
+
+    background-position: right center;
+    animation: slideBackground 5s infinite;
+    /* 30 seconds for one complete cycle (10 seconds per slide) */
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 100% center;
+        /* Start off the right side */
+    }
+
+    33% {
+        background-position: -300px center;
+        /* 10 seconds for the first background image */
+    }
+
+    66% {
+        background-position: 0 center;
+        /* 20 seconds to slide to its position */
+    }
+
+    100% {
+        background-position: 100% center;
+        /* Start sliding the next background */
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="loader-wrap">
+  <div class="preloader"></div>
+  <div class="layer layer-one"><span class="overlay"></span></div>
+  <div class="layer layer-two"><span class="overlay"></span></div>
+  <div class="layer layer-three"><span class="overlay"></span></div>
+</div>
+<header></header>
+
+ <section class="home-slide">
+  <div id="homeSlider" class="carousel slide" data-bs-ride="carousel">
+    <!-- slide-start -->
+    <div class="carousel-inner" id="home_slide"></div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </section>
+
+ <section class="container-box">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4 col-12">
+         <div class="container-card">
+          <img class="head-icon" src="png/004-passport.png" alt="">
+          <h4 class="head-title">Immigration Program</h4>
+          <p class="head-text">To help foreign nationals find out if they may be eligible to apply as immigrants, visitors or students abroad.</p>
+          <a class="head-read" href="">View More Details</a>
+         </div>
+       </div>
+       <div class="col-md-4 col-12">
+         <div class="container-card">
+          <img class="head-icon" src="png/003-winner.png" alt="">
+          <h4 class="head-title">Education Permits</h4>
+          <p class="head-text">Many students prioritize studying abroad to pursue their career. We guide them better career opportunities.</p>
+          <a class="head-read" href="">View More Details</a>
+         </div>
+       </div>
+       <div class="col-md-4 col-12">
+         <div class="container-card">
+          <img class="head-icon" src="png/005-businessman.png" alt="">
+          <h4 class="head-title">Placement </h4>
+          <p class="head-text">For the persons whose jobs require a minimum work experience that are not temporary or seasonal.</p>
+          <a class="head-read" href="">View More Details</a>
+         </div>
+       </div>
+     </div>
+   </div> 
+
+ </section>
+
+<section  class="about">
+  <div class="container">
+      <div class="row">
+        <div class="col-6">
+         <div class="about-text">
+          <div class="head">
+            <h5>Choose any one for your Comforts</h5>
+            <h3 class="title"><strong>Overseas Studies | Tourism Migration | Work Visa</strong></h3>
+          </div>
+          <p>Flying World Migration in Tamilnadu, UAE is the leading Visa consultancy that cater to the needs of any individual. This well-known establishment service customers since 2020 both Gulf & rest of the world, from promising you perfect professional service and peace of mind.
+          </p>
+ 
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="mymodalLable" aria-hidden="true">
+  <div class="modal-dialog model-dialog-centerd">
+    <div class="modal-content rounded-4 shadow-lg">
+
+      <!-- Modal Header -->
+      <div class="modal-header border-0">
+        <h4 class="modal-title text-primary" id="mymodalLable">Let’s Start a Conversation Today!</h4><br>
+
+     <!-----  <h4 class="modal-title text-danger" id="mymodalLable"> Appointment Form</h4>--->
+     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+
+      <!-- Modal body -->
+      <div class="modal-body p-4">
+        <form class="row g-3">
+              <div class="col-md-6 col-12">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+              </div><br>
+              <div class="col-md-6 col-12">
+                  <input type="email" class="form-control" placeholder="Email Address" required>
+              </div><br>
+              <div class="col-md-6 col-12">
+                  <input type="tel" class="form-control" placeholder="Phone No" required>
+              </div><br>
+              <div class="col-md-6 col-12">
+                  <input type="text" class="form-control" placeholder="Subject" required>
+              </div><br>
+              <div class="col-md-6 col-12">
+                  <select class="form-select" name="visa" required>
+                      <option value="disabled selected">--SELECT--</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="Degree">Degree</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="Other Study">Other Study</option>
+                  </select>
+              </div><br>
+              <div class="col-12 ">
+                  <textarea class="form-control" name="message" cols="30" rows="4" placeholder="Message" required></textarea>
+              </div><br><br>
+              <div class="col-12 text-center mt-3">
+                  <button class="btn btn-primary" type="submit">send Message</button>
+              </div>
+          </form>
+        </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div><br>
+
+<div class="about-btn">
+  <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Fix Appointment</button>
+<button class="btn2" type="button">Talk To Us</button>
+</div>
+          <div class="about-note">
+            <p>Note: Going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+          </div>
+         </div>
+        </div>
+        <div class="col-6">
+          <div class="about-img">
+            <img src="png/img18.png" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="country">
+  <div class="container">
+    <div class="coun">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="head p-0">
+            <h5>Who we are</h5>
+            <h2 class="title"><strong>Immigration And Citizenship</strong><br>Choose Your Country!</h2>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="coun-def">
+            <p>We are an expert visa consultant focusing on providing quick services to all your travelling needs. Be it a visa, travel insurance, flight ticketing, we cover it all.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="splide splide1" id="country_slide"></div>
+  </div>
+  <div class="coun-btn">
+    <button class="coun-view" type="button"><a href="gallery.html">View More Details!</a></button>
+  </div>
+  </div>
+</section>
+
+ <section class="um-service">
+   <div class="container">
+    <div class="head">
+      <h4 class="title">Our <strong>Umbrella Of Services</strong></h4>
+      <p>The Entire Spectrum IMMI Services</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="um-cont">
+          <div class="def">
+            <h4>Employment Eligibility Verification</h4>
+            <p>Employers use Employment Eligibility Verification to confirm the identity of a new employee and verify he or she is eligible to be employed in the US.</p>
+          </div>
+          <div class="um-icon">
+            <img src="png/icon1-black.png" alt="">
+          </div>
+        </div>
+        <div class="um-cont">
+          <div class="def">
+            <h4>Assist in Securing Citizenship</h4>
+            <p>The Citizenship Act enacted by the Parliament in 1955 provides for acquisition, renunciation, termination, deprivation and determination of Indian citizenship.</p>
+          </div>
+          <div class="um-icon">
+            <img src="png/icon3-black.png" alt="">
+          </div>
+        </div>
+        <div class="um-cont">
+          <div class="def">
+            <h4>Securing Work Permit</h4>
+            <p>We continue this series on permit to work basics by looking at at the high-level permit process involved.There are nine key steps involved.</p>
+          </div>
+          <div class="um-icon">
+            <img src="png/icon5-black.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="um-cont1">
+          <div class="um-icon">
+            <img src="png/icon2-black.png" alt="">
+          </div>
+          <div class="def">
+            <h4>Electronic Immigration System</h4>
+            <p>Electronic Immigration System (ELIS) is an online system set up by USCIS to give customers a better way to track.</p>
+          </div>
+        </div>
+        <div class="um-cont1">
+          <div class="um-icon">
+            <img src="png/icon4-black.png" alt="">
+          </div>
+          <div class="def">
+            <h4>Assist in applying for Green Card</h4>
+            <p>A permanent resident card, is an identity document which shows that a person has permanent residency in the United States.</p>
+          </div>
+        </div>
+        <div class="um-cont1">
+          <div class="um-icon">
+            <img src="png/icon6-black.png" alt="">
+          </div>
+          <div class="def">
+            <h4>Educational Study Guidance</h4>
+            <p>Educational guidance is a process of assisting the individual student to reach optimum educational development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ </section>
+
+  <section class="choosing-area">
+    <div class="container">
+        <div class="head">
+          <h3 class="title">Reason <strong>For Choose Us</strong></h3>
+        </div>
+        <div class="row">
+            <!--Start single choosing item-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-choosing-item">
+                    <div class="top">
+                        <div class="title-holder float-left">
+                            <h3><strong>3+ Years<br> Experience</strong></h3>
+                        </div>
+                        <div class="icon-holder float-right">
+                            <img src="png/ascendant-business-graphic-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder">
+                        <p>Great explorer of the truth, the master builder of our human happiness. No one rejects, dislikes, or avoids pleasure itself...</p>
+                        <button class="readmore">Read More</button>    
+                    </div>
+                </div>
+            </div>
+            <!--End single choosing item-->
+            <!--Start single choosing item-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-choosing-item">
+                    <div class="top">
+                        <div class="title-holder float-left">
+                            <h3><strong>Dedicated<br> Team</strong></h3>
+                        </div>
+                        <div class="icon-holder float-right">
+                            <img src="png/team-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder">
+                        <p>a business model that refers to an agreement between the client and service provider, when the latter provides software...</p>
+                        <button class="readmore" type="submit">Read More</button>    
+                    </div>
+                </div>
+            </div>
+            <!--End single choosing item-->
+            <!--Start single choosing item-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-choosing-item">
+                    <div class="top">
+                        <div class="title-holder float-left">
+                            <h3><strong>First Quality<br> Service</strong></h3>
+                        </div>
+                        <div class="icon-holder float-right">
+                            <img src="png/quality-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder">
+                        <p>Ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any  find fault chooses...</p>
+                        <button class="readmore" type="submit">Read More</button>    
+                    </div>
+                </div>
+            </div>
+            <!--End single choosing item-->
+            <!--Start single choosing item-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="single-choosing-item">
+                    <div class="top">
+                        <div class="title-holder float-left">
+                            <h3><strong>24*7 Hours<br> Support</strong></h3>
+                        </div>
+                        <div class="icon-holder float-right">
+                            <img src="png/24-hours-support-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-holder">
+                        <p>Denouncing pleasure and praising pain was born seds will give you a complete account of the system, and expound the actual...</p>
+                        <button class="readmore" type="submit">Read More</button>    
+                    </div>
+                </div>
+            </div>
+            <!--End single choosing item-->
+           
+        </div>
+    </div>    
+  </section>
+
+  <section class="testi">
+    <div class="container">
+    <div id="tslider" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <b-row class="row">
+          <b-col class="col-3">
+            <div class="tcaption">
+            
+              <h3><strong>Nigilesh Vashishth</strong><br>Hr Admin</h3>
+              
+
+            </div>
+          </b-col>
+          <b-col class="col-9">
+            <div class="quote">
+              <img src="http://st.ourhtmldemo.com/new/Brighton/images/icon/quote.png" alt="">
+              <blockquote>
+                I was very disheartened when my visa was rejected in 2019. I applied for the visa to a different consultancy in Delhi but they only gave me hope and didn’t do anything affirmative that can assure my immigration application. After a few days, I found out that the guys are a novice and it was a fraud company.
+              </blockquote>
+            </div>
+          </b-col>
+        </b-row>
+        </div>
+
+        <div class="carousel-item">
+        <b-row class="row">
+          <b-col class="col-3">
+            <div class="tcaption">
+              
+              <h3><strong>Nisha Chaudhary</strong><br>Hr/Manager</h3>
+            </div>
+          </b-col>
+          <b-col class="col-9">
+            <div class="quote">
+              <img src="http://st.ourhtmldemo.com/new/Brighton/images/icon/quote.png" alt="">
+              <blockquote>
+               Hello, I just want to tell you that I am really thankful to Flying World Migration and after my marriage my husband shifted to Canada as he got a very good opportunity. It was a sudden decision and the office was looking after his immigration process. After that, I was completely lost as I don’t have any idea what to do. I definitely don’t want that him would miss the opportunity because of me. That’s why I supported this hurried decision.
+              </blockquote>
+            </div>
+          </b-col>
+        </b-row>
+        </div>
+
+        <div class="carousel-item">
+        <b-row class="row">
+          <b-col class="col-3">
+            <div class="tcaption">
+              
+              <h3><strong>Santhi Kothapalli</strong><br>Associate hr</h3>
+            </div>
+          </b-col>
+          <b-col class="col-9">
+            <div class="quote">
+              <img src="http://st.ourhtmldemo.com/new/Brighton/images/icon/quote.png" alt="">
+              <blockquote>
+                My experience with Flying World Migration was outstanding. I have checked all Flying World Migration reviews. it was positive means they gave us an excellent result and guidance. I appreciate Miss Mansi senior consultants work to help us work efficiently. I gave my IELTS under their guidance. It was very effective. I will recommend Flying world Migration to our friends going abroad. So big thanks to the entire team here for making this possible for me. I am looking forward for my ITA now. Thanks."
+              </blockquote>
+            </div>
+          </b-col>
+        </b-row>
+        </div>
+
+      </div>
+       <button class="carousel-control-prev btn3 " type="button" data-bs-target="#tslider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next btn4" type="button" data-bs-target="#tslider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <div class="row plogos">
+     <h1 style="text-align: center;font-size: 30px; color: #ffffff">Testimonials</h1>
+    </div>
+  </div>
+   </section>
+
+   <section class="v-type">
+   <div class="vtypevg">
+      <div class="container">
+      <div class="coun">
+        <div class="row">
+          <div class="col-md-6 col-12" >
+            <div class="head p-0">
+              <h5>HOW WE HELP CLIENTS</h5>
+              <h2 class="title"><strong>Level With Great Visa</strong><br>Serving Policies</h2>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="coun-def">
+              <p>We provide a skilled staff to help you get the most out of your immigration. Our qualified and dependable Immigration Consultants can assist you in obtaining a favorable result in your case.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="splide splide2">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="coun-body">
+                <div class="coun-card">
+                  <img class="coun-img" src="img/career.png" alt="">
+                </div>
+                <div class="coun-text">
+                  <p class="v-fz">VISA TYPES</p>
+                  <h4>Business Visa</h4>
+                  <p>CAI Illinois<br>1821 Walden Office Square Suite 100<br>Schaumburg, IL</p>
+                </div>
+                <div class="v-li">
+                  <i class="dina-arrowRight"></i>
+                  <div class="v-in"></div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="coun-body">
+                <div class="coun-card">
+                  <img class="coun-img" src="img/map.png" alt="">
+                </div>
+                <div class="coun-text">
+                  <p class="v-fz">VISA TYPES</p>
+                  <h4>Tourist Visa</h4>
+                  <p>A visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that ...</p>
+                </div>
+                <div class="v-li">
+                  <i class="dina-arrowRight"></i>
+                  <div class="v-in"></div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="coun-body">
+                <div class="coun-card">
+                  <img class="coun-img" src="img/freelance.png" alt="">
+                </div>
+                <div class="coun-text">
+                  <p class="v-fz">VISA TYPES</p>
+                  <h4>Working Visa</h4>
+                  <p>For people with professions that don't require a lot of experience but aren't temporary or seasonal.</p>
+                </div>
+                <div class="v-li">
+                  <i class="dina-arrowRight"></i>
+                  <div class="v-in"></div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="coun-body">
+                <div class="coun-card">
+                  <img class="coun-img" src="img/magistrate.png" alt="">
+                </div>
+                <div class="coun-text">
+                  <p>VISA TYPES</p>
+                  <h4>Study Visa</h4>
+                  <p>Student visas are non-immigrant visas that do not require to become a citizen of the country in which they...</p>
+                </div>
+                <div class="v-li">
+                  <i class="dina-arrowRight"></i>
+                  <div class="v-in"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+   </div>
+   </section>
+
+
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('footer').addClass('footer-style');
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/splide.min.js"></script>
+<script src="app.js?v4"></script>
+
+
+<script>
+ 
+  new Splide( '.splide2',{
+      // type   : 'loop',
+      perPage: 4,
+      pagination:false,
+      arrows:false,
+      autoplay:true,
+      rewind:true,
+      rewindSpeed:4000,
+      perMove:1,
+      breakpoints:{
+        640:{perPage:2},
+        300:{perPage:1},
+        900:{perPage:3}
+      }
+    } ).mount();
+
+
+
+</script>
+</body>
+</html>
